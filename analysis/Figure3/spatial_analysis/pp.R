@@ -21,7 +21,7 @@ cluster_pca_umap <- function(obj,assay=NULL, reduction,cluster_res = 0.3){
   return(obj2)
 }
 
-normalize_spacial<-function(Spatial_data,lowqspot=0.02,mitper=25,geneExprMin=15,spot_meta="RST2bei"){
+normalize_spacial<-function(Spatial_data,lowqspot=0.02,mitper=25,geneExprMin=15,spot_meta){
     ###标准化
     ##Quantification of spots and genes were carried out by using subset function. 
     #We filtered out ~2% of low-quality spots. Spots with over 25% mitochondrial gene expression were also discarded
